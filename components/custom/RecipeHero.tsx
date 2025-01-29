@@ -57,7 +57,7 @@ export default function RecipeHero() {
 									</p>
 								</div>
 							</div>
-							<Button className="w-full sm:w-auto rounded-full bg-black text-white hover:bg-black/90 p-8">
+							<Button className="w-full sm:w-auto rounded-full bg-black text-white hover:bg-black/90 xl:p-8">
 								View Recipes
 								<ArrowRight className="ml-2 h-4 w-4" />
 							</Button>

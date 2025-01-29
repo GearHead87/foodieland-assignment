@@ -20,7 +20,7 @@ export function ChefHero() {
               <Button
                 variant="secondary"
                 size="lg"
-                className="rounded-full bg-black text-white hover:bg-black/50 p-8"
+                className="rounded-full bg-black text-white hover:bg-black/50 xl:p-8"
               >
                 Learn More
               </Button>
