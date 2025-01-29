@@ -37,8 +37,8 @@ export default function InstagramFeed() {
 		<section className="py-16 px-4 bg-gradient-to-t from-[#E7F9FD]  to-[#fff] ">
 			<div className="max-w-6xl mx-auto">
 				<div className="text-center mb-12">
-					<Heading className='text-center'>Check out @foodieland on Instagram</Heading>
-					<SubHeading>
+					<Heading className='text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-4'>Check out @foodieland on Instagram</Heading>
+					<SubHeading className='mb-6 md:mb-8 text-gray-400 max-w-[540px]'>
 						Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqut enim ad minim
 					</SubHeading>

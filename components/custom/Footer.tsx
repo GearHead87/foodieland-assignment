@@ -1,6 +1,13 @@
 import Link from 'next/link';
 import { Facebook, Twitter, Instagram } from 'lucide-react';
 
+import { Lobster } from 'next/font/google';
+
+const lobster = Lobster({
+	subsets: ['cyrillic', 'latin'],
+	weight: ['400'],
+});
+
 export function Footer() {
 	return (
 		<footer className="border-t border-gray-200 bg-white">
@@ -8,7 +15,7 @@ export function Footer() {
 				<div className="flex flex-col justify-between gap-8 md:flex-row md:items-start">
 					{/* Left Section */}
 					<div className="space-y-4 md:max-w-xs">
-						<h2 className="text-xl font-bold">Foodieland.</h2>
+						<h2 className={`${lobster.className} text-xl font-bold`}>Foodieland.</h2>
 						<p className="text-sm text-gray-500">
 							Lorem ipsum dolor sit amet, consectetuipisicing elit,
 						</p>

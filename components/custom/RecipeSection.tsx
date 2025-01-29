@@ -85,7 +85,7 @@ export default function RecipeSection() {
 		<section className="py-16 px-4">
 			<div className="max-w-7xl mx-auto">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-					<Heading>Try this delicious recipe to make your day</Heading>
+					<Heading className='text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900'>Try this delicious recipe to make your day</Heading>
 					<SubHeading className="md:text-left md:pt-4">
 						Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqut enim ad minim

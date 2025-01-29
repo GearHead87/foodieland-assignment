@@ -38,13 +38,19 @@ export function RecipeCard({ recipe, className }: RecipeCardProps) {
 	}
 
 	return (
-		<div className={cn('group relative overflow-hidden rounded-2xl bg-white', className)}>
+		<div
+			className={cn(
+				'group relative overflow-hidden rounded-2xl',
+				'bg-gradient-to-t from-[#E7F9FD] to-white',
+				className
+			)}
+		>
 			{/* Image */}
-			<div className="aspect-[4/3] w-full">
+			<div className="aspect-[4/3] w-full p-3">
 				<img
 					src={recipe.image || '/placeholder.svg'}
 					alt={recipe.title}
-					className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+					className="h-full w-full object-cover rounded-2xl transition-transform duration-300 group-hover:scale-105"
 				/>
 			</div>
 
@@ -62,7 +68,7 @@ export function RecipeCard({ recipe, className }: RecipeCardProps) {
 			</button>
 
 			{/* Content */}
-			<div className="space-y-3 bg-[#E7F9FD] p-4">
+			<div className="space-y-3 p-4">
 				<h3 className="text-lg font-semibold leading-tight">{recipe.title}</h3>
 				<div className="flex items-center gap-4 text-sm text-gray-600">
 					<div className="flex items-center gap-1">
@@ -78,3 +84,5 @@ export function RecipeCard({ recipe, className }: RecipeCardProps) {
 		</div>
 	);
 }
+
+export default RecipeCard;

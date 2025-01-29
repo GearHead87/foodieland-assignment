@@ -1,21 +1,27 @@
-'use client';
+// 'use client';
 
-import { useState } from 'react';
+// import { useState } from 'react';
 import Link from 'next/link';
 import { Facebook, Twitter, Instagram, Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
+import { Lobster } from 'next/font/google'
+
+const lobster = Lobster({
+	subsets: ['cyrillic', 'latin'],
+	weight:['400']
+})
 
 export default function Navbar() {
-	const [isOpen, setIsOpen] = useState(false);
+	// const [isOpen, setIsOpen] = useState(false);
 
 	return (
 		<nav className="border-b">
 			<div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 				{/* Logo */}
 				<div className="flex lg:flex-1">
-					<Link href="/" className="text-xl font-bold">
-						Foodieland
+					<Link href="/" className={`${lobster.className} text-xl font-bold`}>
+						Foodieland.
 					</Link>
 				</div>
 
