@@ -1,7 +1,6 @@
-import { Button } from '@/components/ui/button';
 import { Heading } from '../shared/Heading';
 import { SubHeading } from '../shared/SubHeading';
-import { UtensilsCrossed, Users2, Trophy, Clock } from 'lucide-react';
+import { Trophy } from 'lucide-react';
 
 export function AboutHero() {
 	return (

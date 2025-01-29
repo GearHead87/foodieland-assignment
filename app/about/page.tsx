@@ -2,7 +2,7 @@ import { AboutFeatures } from '@/components/custom/AboutFeatures';
 import { AboutHero } from '@/components/custom/AboutHero';
 import { AboutTeam } from '@/components/custom/AboutTeam';
 
-export function About() {
+export default function About() {
 	return (
 		<div className="min-h-screen bg-white">
 			<AboutHero />
@@ -11,5 +11,3 @@ export function About() {
 		</div>
 	);
 }
-
-export default About;

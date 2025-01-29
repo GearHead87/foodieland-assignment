@@ -2,12 +2,6 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import SiteHeader from '@/components/layout/SiteHeader';
-import { Lobster } from 'next/font/google'
-
-const lobster = Lobster({
-	subsets: ['cyrillic', 'latin'],
-	weight:['400']
-})
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',

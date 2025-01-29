@@ -4,12 +4,11 @@ interface InstagramPostProps {
 	date: string;
 }
 
-import Image from 'next/image';
 import { Heart, MessageCircle, Send, Bookmark } from 'lucide-react';
 
 export default function InstagramPost({ image, caption, date }: InstagramPostProps) {
 	return (
-		<div className="max-w-[470px] bg-white rounded-lg shadow-sm border border-gray-200">
+		<div className="max-w-[470px] bg-white rounded-lg shadow-sm border border-gray-200 mx-auto">
 			{/* Post Header */}
 			<div className="flex items-center p-3 gap-3">
 				<div className="w-8 h-8 relative rounded-full overflow-hidden">
@@ -46,7 +45,6 @@ export default function InstagramPost({ image, caption, date }: InstagramPostPro
 				<img
 					src={image || '/placeholder.svg'}
 					alt="Instagram post"
-					fill
 					className="w-full object-cover"
 				/>
 				<div className="absolute top-3 right-3 bg-black/75 text-white text-xs px-2 py-1 rounded-full">
