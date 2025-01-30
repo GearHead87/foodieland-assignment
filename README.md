@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Foodieland - Recipe Sharing Platform
 
-## Getting Started
+A modern recipe sharing platform built with Next.js, TypeScript, and Tailwind CSS. Foodieland allows users to discover, share, and explore various recipes while enjoying a seamless user experience.
 
-First, run the development server:
+## 🚀 Features
 
+- Responsive design optimized for all devices
+- Recipe discovery with categorized browsing
+- Featured chefs section
+- Instagram feed integration
+- Newsletter subscription
+- Detailed recipe pages with instructions
+- About page with team information
+- Category-based recipe filtering
+
+## 🛠️ Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework for production
+- [TypeScript](https://www.typescriptlang.org/) - Static type checking
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [shadcn/ui](https://ui.shadcn.com/) - UI component library
+
+## 📁 Project Structure
+
+```
+gearhead87-foodieland-assignment/
+├── app/                  # Next.js app directory
+├── components/          
+│   ├── custom/          # Custom project components
+│   ├── layout/          # Layout components
+│   ├── shared/          # Reusable shared components
+│   └── ui/              # UI component library
+├── data/                # Static data files
+├── lib/                 # Utility functions
+└── public/              # Static assets
+```
+
+## 🚦 Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/gearhead87-foodieland-assignment.git
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env.local` file in the root directory and add any required environment variables.
 
-## Learn More
+## 🧱 Component Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `components/custom/` - Contains all custom components specific to Foodieland
+- `components/layout/` - Houses layout-related components like headers
+- `components/shared/` - Includes reusable components across the application
+- `components/ui/` - Contains shadcn/ui components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 Data Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The project uses TypeScript for type safety. Data models can be found in:
+- `data/categories.ts` - Recipe categories
+- `data/recipes.ts` - Recipe information
 
-## Deploy on Vercel
+## 🎨 Styling
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project uses:
+- Tailwind CSS for styling
+- Custom components built on top of shadcn/ui
+- Responsive design principles
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔧 Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build production version
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run type-check` - Run TypeScript compiler
+
+## 📱 Features Breakdown
+
+### Recipe Section
+- Grid layout for recipe cards
+- Filtering by categories
+- Detailed recipe views
+
+### About Section
+- Team member profiles
+- Company features
+- Mission statement
+
+### Chef Section
+- Featured chefs
+- Chef profiles
+- Specialties
+
+### Social Integration
+- Instagram feed
+- Newsletter subscription
+- Social sharing capabilities
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📜 License
+
+This project is licensed under the MIT License - see the LICENSE file for details
+
+## 👥 Author
+
+- Hosan Ul Islam (@gearhead87)
